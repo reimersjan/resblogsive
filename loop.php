@@ -6,11 +6,7 @@
 		
 			<h2><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permalink to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 			
-			<?php the_content('Read Full Article'); ?>
-			
-			<p class="meta">
-				<?php the_time('F, jS, Y'); ?>
-			</p>
+			<?php get_the_excerpt(); ?>
 			
 		</article>
 		

@@ -6,12 +6,12 @@
 		
 			<article class="post" id="post-<?php the_ID(); ?>">
 			
-				<h2><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permalink to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+				<h2><?php the_title(); ?></h2>
 				
 				<?php the_content('Read Full Article'); ?>
 				
 				<p class="meta">
-					<?php the_time('F, jS, Y'); ?>
+					<?php the_time('F jS, Y'); ?>
 				</p>
 				
 			</article>
