@@ -1,4 +1,4 @@
 resblogsive
 ===========
 
-a responsive blog theme
+a responsive blog theme for WordPress
