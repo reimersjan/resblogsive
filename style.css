@@ -1,0 +1,554 @@
+/*
+Theme Name: Resblogsive
+Theme URI: https://github.com/reimersjan/resblogsive
+Description: a responsive blog theme
+Version: 1.6
+Author: Jan Reimers
+Author URI: http://janreimers.net
+Tags: blue, white, light, one-column, flexible-width, custom-header, custom-menu, editor-style, featured-images, flexible-header
+
+License: GNU General Public License (GPL) 2.0
+License URI: http://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html
+
+  ■ imports
+  ■ the very basics
+  ■ WordPress basics
+  ■ typography
+  ■ links
+  ■ colors, borders, backgrounds
+  ■ layout
+    ■ header
+    ■ nav
+    ■ content
+    ■ footer
+  ■ responsiveness
+  ■ dirty little helpers
+*/
+
+/* imports */
+@import url(css/reset.css);
+@import url(http://fonts.googleapis.com/css?family=Merriweather:400,400italic,700|Source+Code+Pro|Bitter:700);
+@import url(http://weloveiconfonts.com/api/?family=entypo|zocial);
+
+/* the very basics */
+body { margin: 0; }
+em { font-style: italic }
+strong { font-weight: 700 }
+small { font-size: 50%; }
+button { cursor: pointer; }
+del { text-decoration: line-through; }
+ins { text-decoration: none; border-bottom: 3px double; }
+img { 
+  max-width: 100%;
+  height: auto;
+  padding: 0.2em;
+  border: 0.2em solid rgba(52, 73, 94, 0.2);
+}
+
+/* WordPress basics */
+.alignleft {
+  float: left;
+  margin: 0 2em 1em 0;
+}
+.alignright {
+  float: right;
+  margin: 0 0 1em 2em;
+}
+.alignnone {
+    
+}
+.aligncenter,
+div.aligncenter {
+  display: block;
+  margin: 0 auto;
+}
+.alignright {
+  float:right;
+}
+.alignleft {
+  float: left;
+}
+
+a img.alignright {
+  float: right;
+}
+a img.alignnone {
+
+}
+a img.alignleft {
+  float: left;
+}
+a img.aligncenter {
+  display: block;
+  margin: 0 auto;
+}
+.wp-caption {
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  max-width: 96%;
+  padding: 5px 3px 10px;
+  text-align: center;
+}
+.wp-caption.alignnone {
+  margin: 5px 20px 20px 0;
+}
+.wp-caption.alignleft {
+  margin: 5px 20px 20px 0;
+}
+.wp-caption.alignright {
+  margin: 5px 0 20px 20px;
+}
+.wp-caption img {
+  border: 0 none;
+  height: auto;
+  margin: 0;
+  max-width: 98.5%;
+  padding: 0;
+  width: auto;
+}
+.wp-caption p.wp-caption-text {
+  font-size: 11px;
+  line-height: 17px;
+  margin: 0;
+  padding: 0 4px 5px;
+}
+
+* { box-sizing: border-box; }
+
+/* typography */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+}
+body {
+  font-family: 'Merriweather', Georgia, Times, 'Times New Roman', serif;
+  font-size-adjust: auto;
+  text-rendering: optimizeLegibility;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+}
+header, footer {
+  text-align: center;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Bitter', Georgia, Times, 'Times New Roman', serif;
+  font-weight: 700;
+  line-height: 1.2em;
+}
+h1 {
+  font-size: 3.8em;
+  letter-spacing: 0.05em;
+}
+.main-nav {
+  font-size: 0.9em;
+}
+h2 {
+  font-size: 3em;
+}
+h3 {
+  font-size: 2.5em;
+}
+h4 {
+  font-size: 2em;
+}
+p, li {
+  font-size: 1.5em;
+  font-weight: 400;
+  line-height: 1.6em;
+  word-spacing: 0.2em;
+  hyphens: auto;
+}
+li li {
+  font-size: 1em;
+}
+blockquote {
+  font-size: 1.75em;
+  line-height: 1.5em;
+  font-style: italic;
+}
+code, pre {
+  font-family: 'Source Code Pro', 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
+}
+code, pre {
+  font-size: 1.2em;
+  line-height: 1.3em;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+p.meta {
+  font-size: 1.25em;
+  line-height: 2em;
+  text-align: center;
+}
+.recommend li {
+  line-height: 2em;
+}
+footer p {
+  font-size: 1.2em;
+  hyphens: none;
+}
+.footer-beta {
+  font-size: 1.75em;
+  line-height: 1.5em;
+  text-align: center;
+}
+.social li {
+  font-size: 2em;
+  line-height: 2em;
+}
+
+/* links */
+a:link, a:visited {
+  color: #777;
+  text-decoration: underline;
+}
+a:hover, a:active {
+  color: #000;
+}
+.main-nav a {
+  text-decoration: none;
+  padding: 0.1em 0.2em;
+}
+.main-nav .current:hover {
+  border-bottom: none;
+}
+.footer-beta a {
+  margin: 0 0.25em;
+}
+.footer-beta a:hover {
+  cursor: pointer;
+}
+.social a {
+  text-decoration: none;
+}
+
+/* colors, borders, backgrounds */
+body {
+  background: #fff;
+}
+header {
+  color: #555;
+}
+footer, .main-nav {
+  background: rgb(52, 73, 94);
+  color: #fff;
+}
+h1 {
+  color: #fff;
+  text-shadow: 0 0 5px #333;
+}
+h2, h3, h4, h5, h6 {
+  color: rgba(0, 0, 0, 0.7);
+}
+.main-nav a,
+.page-footer a {
+  color: #ddd;
+}
+.page-footer a:hover {
+  color: #fff;
+}
+.main-nav .current {
+  color: #fff;
+}
+.main-nav a:hover {
+  border-bottom: 0.15em solid #ddd;
+}
+button {
+  border: none;
+  background: rgba(0,0,0,0.4);
+  color: #fff;
+  border-radius: 5px;
+}
+button:hover,
+button:active,
+button:focus {
+  background: rgba(0,0,0,0.6);
+}
+.nav-trigger {
+  background: rgb(52, 73, 94);
+}
+.nav-close {
+  background: rgba(255,255,255,0.2);
+}
+.nav-trigger:hover,
+.nav-trigger:active {
+  background: rgba(52, 73, 94, 0.8);
+}
+.nav-close:hover,
+.nav-close:active {
+  background: rgba(0,0,0,0.3);
+}
+article, .comments {
+  border-bottom: 0.4em solid rgba(0, 0, 0, 0.1);
+}
+blockquote {
+  color: #555;
+  border-left: 0.5em solid rgba(52, 73, 94, 0.7); /* rgba(0, 0, 0, 0.4) */
+}
+code {
+  color: #555;
+  background: rgba(52, 73, 94, 0.1);
+  border: 0.125em solid rgba(52, 73, 94, 0.2);
+}
+code::before {
+  color: #fff;
+  background: rgb(52, 73, 94);
+}
+p.meta {
+  color: #555;
+}
+ul li::before {
+  content: "■ ";
+  color: rgb(52, 73, 94);
+}
+li li::before {
+  color: rgba(52, 73, 94, 0.7);
+}
+li li li::before {
+  color: rgba(52, 73, 94, 0.4);
+}
+.social li::before {
+  content: "";
+}
+
+/* layout */
+.wrapper {
+  margin: 1em auto;
+  max-width: 71.25em;
+}
+header, footer {
+  padding: 1em 2em;
+}
+
+  /* header */
+header {
+  height: auto;
+}
+h1 {
+  margin: 1em 0;
+  padding: 0.25em;
+}
+
+  /* nav */
+.main-nav {
+  display: block;
+  margin: 0;
+  padding: 0 0 0 2em;
+}
+.main-nav li {
+  display: inline-block;
+  padding: 1em 2em 1em 0;
+}
+.main-nav li::before {
+  content: "";
+}
+.nav-trigger,
+.nav-close {
+  display: none;
+}
+
+  /* content */
+.content {
+  padding: 0 2em;
+}
+article, .comments {
+  padding: 0 0 3.5em 0;
+  margin: 5em 0;
+}
+blockquote {
+  padding: 0.5em 1em;
+  margin: 1em 0;
+}
+code {
+  display: block;
+  padding: 0 1.5em;
+  margin: 2em 0;
+  max-width: 100%;
+}
+code::before  {
+  float: right;
+  padding: 0.5em 1em;
+  margin: -1.25em 0 0 0;
+  content: attr(data-lang);
+  text-transform: uppercase;
+}
+h2, h3, h4, h5, h6 {
+  margin: 0.5em 0;
+}
+p {
+  margin: 1.5em 0;
+}
+p.meta {
+  margin: 1.5em 0 0 0;
+}
+p.meta > * {
+  margin-right: 1em;
+}
+p.meta:last-child {
+  margin-right: 0;
+}
+ul {
+  list-style: none;
+  margin: 2em 0;
+}
+ul ul {
+  margin: 0;
+}
+ol {
+  list-style: decimal;
+  margin-left: 2.5em;
+}
+li {
+  padding: 0 0 0 0.5em;
+}
+li li {
+  padding: 0 0 0 1em;
+}
+
+/* footer */
+.page-footer {
+  margin-top: 5em;
+}
+.social li {
+  display: inline-block;
+  padding: 0 0.5em;
+}
+
+/* responsiveness */
+@media (min-width: 100em) {
+  header {
+    background: rgba(0, 0, 0, 0.1) url('http://lorempixel.com/g/1600/400/nature/5/') center center no-repeat;
+    background-size: cover;
+  }
+}
+@media (min-width: 75em) and (max-width: 100em) {
+  html {
+    font-size: 16px;
+  }
+  header {
+    background: rgba(0, 0, 0, 0.1) url('http://lorempixel.com/g/1200/300/nature/4/') center center no-repeat;
+    background-size: cover;
+  }
+  code {
+    font-size: 1.4em;
+  }
+}
+@media (min-width: 48em) and (max-width: 75em) {
+  html {
+    font-size: 13px;
+  }
+  header {
+    background: rgba(0, 0, 0, 0.1) url('http://lorempixel.com/g/990/248/nature/3/') center center no-repeat;
+    background-size: cover;
+  }
+  .wrapper {
+    margin: 1.75em auto;
+  }
+  code {
+    font-size: 1.4em;
+  }
+}
+@media (max-width: 47.9375em) and (min-width: 30em) {
+  html {
+    font-size: 12px;
+  }
+  header, footer {
+    padding: 0.75em 1.5em;
+  }
+  header {
+    background: rgba(0, 0, 0, 0.1) url('http://lorempixel.com/g/770/192/nature/2/') center center no-repeat;
+    background-size: cover;
+  }
+  h1 {
+    margin: 0.75em 0;
+  }
+  .wrapper {
+    margin: 1.5em auto;
+  }
+  .nav-close {
+    display: none;
+  }
+  .content {
+    padding: 0 1.5em;
+  }
+  time {
+    display: block;
+  }
+  code {
+    font-size: 1.4em;
+  }
+  .footer-beta span {
+    display: block;
+  }
+}
+@media (max-width: 30em) {
+  html {
+    font-size: 11px;
+  }
+  header, footer {
+    padding: 0.5em 1em;
+  }
+  header {
+    background: rgba(0, 0, 0, 0.1) url('http://lorempixel.com/g/480/120/nature/1/') center center no-repeat;
+    background-size: cover;
+}
+  h1 {
+    margin: 0.5em 0;
+  }
+  .main-nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+    padding: 25% 0;
+  }
+  .main-nav li {
+    display: block;
+    text-align: center;
+    font-size: 2em;
+    padding: 1em 0;
+  }
+  .nav-trigger {
+    display: inline-block;
+    margin: 1em;
+    padding: 0em 1.2em;
+  }
+  .nav-trigger span {
+    display: block;
+    font-size: 4em;
+    font-weight: bold;
+  }
+  .nav-close {
+    position: fixed;
+    z-index: 999;
+    top: 0.25em;
+    left: 0.25em;
+    font-size: 4em;
+    padding: 0 0.45em;
+  }
+  .wrapper {
+    margin: 1em auto;
+  }
+  .content {
+    padding: 0 1em;
+  }
+  code {
+    font-size: 1.5em;
+  }
+  time {
+    display: block;
+  }
+}
+
+/* dirty little helpers */
+.showit {
+  display: block;
+}
+.hideit {
+  display: none;
+}
