@@ -11,6 +11,7 @@ License: GNU General Public License (GPL) 2.0
 License URI: http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
 
   ■ imports
+  ■ reset
   ■ the very basics
   ■ WordPress basics
   ■ typography
@@ -20,22 +21,79 @@ License URI: http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
     ■ header
     ■ nav
     ■ content
+      ■ input, textarea
     ■ footer
   ■ responsiveness
   ■ dirty little helpers
 */
 
 /* imports */
-@import url(css/reset.css);
 @import url(http://fonts.googleapis.com/css?family=Merriweather:400,400italic,700|Source+Code+Pro|Bitter:700);
 @import url(http://weloveiconfonts.com/api/?family=entypo|zocial);
 
+/* reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 /* the very basics */
+
+* { 
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
 body { margin: 0; }
 em { font-style: italic }
 strong { font-weight: 700 }
 small { font-size: 50%; }
-button { cursor: pointer; }
+button, .button { cursor: pointer; }
 del { text-decoration: line-through; }
 ins { text-decoration: none; border-bottom: 3px double; }
 img { 
@@ -113,8 +171,6 @@ a img.aligncenter {
   padding: 0 4px 5px;
 }
 
-* { box-sizing: border-box; }
-
 /* typography */
 [class*="entypo-"]:before {
   font-family: 'entypo', sans-serif;
@@ -180,6 +236,12 @@ p.meta {
   font-size: 1.25em;
   line-height: 2em;
   text-align: center;
+}
+input, textarea {
+	font-family: 'Merriweather', Georgia, Times, 'Times New Roman', serif;
+}
+input {
+	font-size: 1em;
 }
 .recommend li {
   line-height: 2em;
@@ -254,15 +316,16 @@ h2, h3, h4, h5, h6 {
 #access a:hover {
   border-bottom: 0.15em solid #ddd;
 }
-button {
+button,
+.button {
   border: none;
   background: rgba(0,0,0,0.4);
   color: #fff;
   border-radius: 5px;
 }
-button:hover,
-button:active,
-button:focus {
+button:hover, .button:hover,
+button:active, .button:active,
+button:focus, .button:focus {
   background: rgba(0,0,0,0.6);
 }
 .nav-trigger {
@@ -321,7 +384,7 @@ header, footer {
   padding: 1em 2em;
 }
 
-  /* header */
+/* header */
 header {
   height: auto;
 }
@@ -330,7 +393,7 @@ h1 {
   padding: 0.25em;
 }
 
-  /* nav */
+/* nav */
 #access {
   display: block;
   margin: 0;
@@ -351,7 +414,7 @@ h1 {
   display: none;
 }
 
-  /* content */
+/* content */
 .content {
   padding: 0 2em;
 }
@@ -407,6 +470,16 @@ li {
 }
 li li {
   padding: 0 0 0 1em;
+}
+
+/* input, textarea */
+input, textarea { 
+	width: 100%;
+	margin: 1em 0;
+	padding: 1em;
+}
+textarea {
+	resize: vertical;
 }
 
 /* footer */
