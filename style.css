@@ -53,9 +53,9 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
-	font: inherit;
 	vertical-align: baseline;
+	font: inherit;
+	font-size: 100%;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -77,8 +77,8 @@ q:before, q:after {
 	content: none;
 }
 table {
-	border-collapse: collapse;
 	border-spacing: 0;
+	border-collapse: collapse;
 }
 
 /* the very basics */
@@ -90,16 +90,16 @@ table {
 }
 
 body { margin: 0; }
-em { font-style: italic }
-strong { font-weight: 700 }
+em { font-style: italic; }
+strong { font-weight: 700; }
 small { font-size: 50%; }
 button, .button { cursor: pointer; }
 del { text-decoration: line-through; }
-ins { text-decoration: none; border-bottom: 3px double; }
-img { 
+ins { border-bottom: 3px double; text-decoration: none; }
+img {
+  padding: 0.2em; 
   max-width: 100%;
   height: auto;
-  padding: 0.2em;
   border: 0.2em solid rgba(52, 73, 94, 0.2);
 }
 
@@ -141,10 +141,10 @@ a img.aligncenter {
   margin: 0 auto;
 }
 .wp-caption {
-  background: #fff;
-  border: 1px solid #f0f0f0;
-  max-width: 96%;
   padding: 5px 3px 10px;
+  max-width: 96%;
+  border: 1px solid #f0f0f0;
+  background: #fff;
   text-align: center;
 }
 .wp-caption.alignnone {
@@ -157,18 +157,18 @@ a img.aligncenter {
   margin: 5px 0 20px 20px;
 }
 .wp-caption img {
-  border: 0 none;
-  height: auto;
   margin: 0;
-  max-width: 98.5%;
   padding: 0;
+  max-width: 98.5%;
   width: auto;
+  height: auto;
+  border: 0 none;
 }
 .wp-caption p.wp-caption-text {
-  font-size: 11px;
-  line-height: 17px;
   margin: 0;
   padding: 0 4px 5px;
+  font-size: 11px;
+  line-height: 17px;
 }
 
 /* typography */
@@ -179,23 +179,23 @@ a img.aligncenter {
   font-family: 'zocial', sans-serif;
 }
 body {
-  font-family: 'Merriweather', Georgia, Times, 'Times New Roman', serif;
-  font-size-adjust: auto;
-  text-rendering: optimizeLegibility;
   font-weight: normal;
+  font-size-adjust: auto;
+  font-family: 'Merriweather', Georgia, Times, 'Times New Roman', serif;
+  text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
 header, footer {
   text-align: center;
 }
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Bitter', Georgia, Times, 'Times New Roman', serif;
   font-weight: 700;
+  font-family: 'Bitter', Georgia, Times, 'Times New Roman', serif;
   line-height: 1.2em;
 }
 h1 {
-  font-size: 3.8em;
   letter-spacing: 0.05em;
+  font-size: 3.8em;
 }
 #access {
   font-size: 0.9em;
@@ -210,32 +210,32 @@ h4 {
   font-size: 2em;
 }
 p, li {
-  font-size: 1.5em;
-  font-weight: 400;
-  line-height: 1.6em;
   word-spacing: 0.2em;
   hyphens: auto;
+  font-weight: 400;
+  font-size: 1.5em;
+  line-height: 1.6em;
 }
 li li {
   font-size: 1em;
 }
 blockquote {
-  line-height: 1.5em;
   font-style: italic;
+  line-height: 1.5em;
 }
 code, pre {
   font-family: 'Source Code Pro', 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
 }
 code, pre {
-  font-size: 1.2em;
-  line-height: 1.3em;
   white-space: pre-wrap;
   word-wrap: break-word;
+  font-size: 1.2em;
+  line-height: 1.3em;
 }
 p.meta {
+  text-align: center;
   font-size: 1.25em;
   line-height: 2em;
-  text-align: center;
 }
 input, textarea {
 	font-family: 'Merriweather', Georgia, Times, 'Times New Roman', serif;
@@ -247,13 +247,13 @@ input {
   line-height: 2em;
 }
 footer p {
-  font-size: 1.2em;
   hyphens: none;
+  font-size: 1.2em;
 }
 .footer-beta {
+  text-align: center;
   font-size: 1.75em;
   line-height: 1.5em;
-  text-align: center;
 }
 .social li {
   font-size: 2em;
@@ -269,8 +269,8 @@ a:hover, a:active {
   color: #000;
 }
 #access a {
-  text-decoration: none;
   padding: 0.1em 0.2em;
+  text-decoration: none;
 }
 #access .current:hover {
   border-bottom: none;
@@ -319,9 +319,9 @@ h2, h3, h4, h5, h6 {
 button,
 .button {
   border: none;
+  border-radius: 5px;
   background: rgba(0,0,0,0.4);
   color: #fff;
-  border-radius: 5px;
 }
 button:hover, .button:hover,
 button:active, .button:active,
@@ -346,24 +346,24 @@ article, .comments {
   border-bottom: 0.4em solid rgba(0, 0, 0, 0.1);
 }
 blockquote {
-  color: #555;
   border-left: 0.5em solid rgba(52, 73, 94, 0.7); /* rgba(0, 0, 0, 0.4) */
+  color: #555;
 }
 code {
-  color: #555;
-  background: rgba(52, 73, 94, 0.1);
   border: 0.125em solid rgba(52, 73, 94, 0.2);
+  background: rgba(52, 73, 94, 0.1);
+  color: #555;
 }
 code::before {
-  color: #fff;
   background: rgb(52, 73, 94);
+  color: #fff;
 }
 p.meta {
   color: #555;
 }
 ul li::before {
-  content: "■ ";
   color: rgb(52, 73, 94);
+  content: "■ ";
 }
 li li::before {
   color: rgba(52, 73, 94, 0.7);
@@ -419,23 +419,23 @@ h1 {
   padding: 0 2em;
 }
 article, .comments {
-  padding: 0 0 3.5em 0;
   margin: 5em 0;
+  padding: 0 0 3.5em 0;
 }
 blockquote {
-  padding: 0.0001em 1em;
   margin: 1em 0;
+  padding: 0.0001em 1em;
 }
 code {
   display: block;
-  padding: 0 1.5em;
   margin: 2em 0;
+  padding: 0 1.5em;
   max-width: 100%;
 }
 code::before  {
   float: right;
-  padding: 0.5em 1em;
   margin: -1.25em 0 0 0;
+  padding: 0.5em 1em;
   content: attr(data-lang);
   text-transform: uppercase;
 }
@@ -455,15 +455,15 @@ p.meta:last-child {
   margin-right: 0;
 }
 ul {
-  list-style: none;
   margin: 2em 0;
+  list-style: none;
 }
 ul ul {
   margin: 0;
 }
 ol {
-  list-style: decimal;
   margin-left: 2.5em;
+  list-style: decimal;
 }
 li {
   padding: 0 0 0 0.5em;
@@ -473,10 +473,10 @@ li li {
 }
 
 /* input, textarea */
-input, textarea { 
-	width: 100%;
+input, textarea {
 	margin: 1em 0;
-	padding: 1em;
+	padding: 1em; 
+	width: 100%;
 }
 textarea {
 	resize: vertical;
@@ -573,20 +573,20 @@ textarea {
     margin: 0.5em 0;
   }
   .main-nav {
-    display: none;
     position: fixed;
     top: 0;
     left: 0;
+    display: none;
+    padding: 25% 0;
     width: 100%;
     height: 100%;
     opacity: 0.9;
-    padding: 25% 0;
   }
   .main-nav li {
     display: block;
+    padding: 1em 0;
     text-align: center;
     font-size: 2em;
-    padding: 1em 0;
   }
   .nav-trigger {
     display: inline-block;
@@ -595,16 +595,16 @@ textarea {
   }
   .nav-trigger span {
     display: block;
-    font-size: 4em;
     font-weight: bold;
+    font-size: 4em;
   }
   .nav-close {
     position: fixed;
-    z-index: 999;
     top: 0.25em;
     left: 0.25em;
-    font-size: 4em;
+    z-index: 999;
     padding: 0 0.45em;
+    font-size: 4em;
   }
   .wrapper {
     margin: 1em auto;
