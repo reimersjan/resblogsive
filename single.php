@@ -11,7 +11,7 @@
 				<?php the_content('Read Full Article'); ?>
 				
 				<p class="meta">
-					<?php the_time('F jS, Y'); ?>
+					<?php the_time('F jS, Y'); ?> - <?php the_author(); ?>
 				</p>
 				
 			</article>

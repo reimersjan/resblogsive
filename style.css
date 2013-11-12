@@ -50,43 +50,43 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	vertical-align: baseline;
-	font: inherit;
-	font-size: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  font: inherit;
+  font-size: 100%;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
 ol, ul {
-	list-style: none;
+  list-style: none;
 }
 blockquote, q {
-	quotes: none;
+  quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+  content: '';
+  content: none;
 }
 table {
-	border-spacing: 0;
-	border-collapse: collapse;
+  border-spacing: 0;
+  border-collapse: collapse;
 }
 
 /* the very basics */
 
 * { 
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body { margin: 0; }
@@ -197,6 +197,9 @@ h1 {
   letter-spacing: 0.05em;
   font-size: 3.8em;
 }
+h1 small {
+  font-style: italic;
+}
 #access {
   font-size: 0.9em;
 }
@@ -209,7 +212,13 @@ h3 {
 h4 {
   font-size: 2em;
 }
-p, li {
+h5 {
+  font-size: 1.5em;
+}
+h6 {
+  font-size: 1.2em;
+}
+p, li, address {
   word-spacing: 0.2em;
   hyphens: auto;
   font-weight: 400;
@@ -219,18 +228,28 @@ p, li {
 li li {
   font-size: 1em;
 }
+abbr, acronym {
+	border-bottom: 2px dotted;
+}
 blockquote {
   font-style: italic;
   line-height: 1.5em;
 }
+cite {
+  font-weight: 700;
+  font-size: 0.8em;
+}
 code, pre {
   font-family: 'Source Code Pro', 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
 }
-code, pre {
+pre {
   white-space: pre-wrap;
   word-wrap: break-word;
-  font-size: 1.2em;
+  font-size: 1.3em;
   line-height: 1.3em;
+}
+code {
+  font-size: 0.85em;
 }
 p.meta {
   text-align: center;
@@ -238,10 +257,10 @@ p.meta {
   line-height: 2em;
 }
 input, textarea {
-	font-family: 'Merriweather', Georgia, Times, 'Times New Roman', serif;
+  font-family: 'Merriweather', Georgia, Times, 'Times New Roman', serif;
 }
 input {
-	font-size: 1em;
+  font-size: 1em;
 }
 .recommend li {
   line-height: 2em;
@@ -267,6 +286,13 @@ a:link, a:visited {
 }
 a:hover, a:active {
   color: #000;
+}
+h1 a:link, h1 a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+h1 a:hover, h1 a:active {
+	color: #E5E5E5;
 }
 #access a {
   padding: 0.1em 0.2em;
@@ -349,7 +375,10 @@ blockquote {
   border-left: 0.5em solid rgba(52, 73, 94, 0.7); /* rgba(0, 0, 0, 0.4) */
   color: #555;
 }
-code {
+cite {
+  color: rgb(52, 73, 94);
+}
+code, pre {
   border: 0.125em solid rgba(52, 73, 94, 0.2);
   background: rgba(52, 73, 94, 0.1);
   color: #555;
@@ -426,13 +455,20 @@ blockquote {
   margin: 1em 0;
   padding: 0.0001em 1em;
 }
-code {
+cite {
+  display: block;
+  margin: 1em 0;
+}
+pre {
   display: block;
   margin: 2em 0;
-  padding: 0 1.5em;
+  padding: 1em 1.5em;
   max-width: 100%;
 }
-code::before  {
+code {
+  padding: 0 0.25em;
+}
+pre::before  {
   float: right;
   margin: -1.25em 0 0 0;
   padding: 0.5em 1em;
