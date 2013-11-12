@@ -8,7 +8,7 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class($class); ?>>
+<body <?php body_class(); ?>>
 
 	<header>
 		<h1><a href="<?php echo home_url( '/' ); ?>" rel="home"><?php bloginfo('name'); ?></a><br/><small><?php bloginfo('description'); ?></small></h1>
