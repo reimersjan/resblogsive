@@ -8,6 +8,9 @@ function resblogsive_theme_features() {
 	
 	// add automatic feed links to <head>
 	add_theme_support( 'automatic-feed-links' );
+	
+	// add some style to the backend editor
+	add_editor_style( 'css/editor-style.css' );
 
 	// custom header images	
 	$header_args = array(
@@ -28,9 +31,6 @@ function resblogsive_theme_features() {
 		'main_nav' => __( 'Main Navigation' ),
 	));
 	
-	// add some style to the backend editor
-	add_editor_style( 'css/editor-style.css' );
-	
 	// remove <p> tag from images
 	// snippet from http://css-tricks.com/snippets/wordpress/remove-paragraph-tags-from-around-images/
 	function filter_ptags_on_images($content){
@@ -46,4 +46,11 @@ function resblogsive_theme_features() {
 // hook into 'after_setup_theme' action
 add_action( 'after_setup_theme', 'resblogsive_theme_features' );
 
-?>
+// enqueue scripts and styles.
+function resblogsive_scripts() {
+	wp_enqueue_style( 'resblogsive-style', get_stylesheet_uri() );
+	wp_enqueue_script( 'jquery' );
+	wp_enqueue_script( 'resblogsive-js', get_template_directory_uri() . '/js/scripts.js' );
+}
+add_action( 'wp_enqueue_scripts', 'resblogsive_scripts' );
+

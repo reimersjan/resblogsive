@@ -3,7 +3,6 @@
 <head>
   <title><?php bloginfo('name'); ?></title>
 	<meta charset="<?php bloginfo('charset'); ?>" />
-	<link rel='stylesheet' href='<?php bloginfo("stylesheet_url"); ?>' media='screen' />
 	<link href="<?php bloginfo('template_url'); ?>/images/favicon.ico" rel="shortcut icon" />
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
 	<?php wp_head(); ?>
