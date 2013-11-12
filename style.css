@@ -29,7 +29,6 @@ License URI: http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
 
 /* imports */
 @import url(http://fonts.googleapis.com/css?family=Merriweather:400,400italic,700|Source+Code+Pro|Bitter:700);
-@import url(http://weloveiconfonts.com/api/?family=entypo|zocial);
 
 /* reset */
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -162,12 +161,11 @@ a img.aligncenter {
   max-width: 98.5%;
   width: auto;
   height: auto;
-  border: 0 none;
 }
 .wp-caption p.wp-caption-text {
   margin: 0;
-  padding: 0 4px 5px;
-  font-size: 11px;
+  padding: 0.5em;
+  font-size: 1em;
   line-height: 17px;
 }
 
@@ -506,6 +504,9 @@ li {
 }
 li li {
   padding: 0 0 0 1em;
+}
+.sticky {
+	
 }
 
 /* input, textarea */
