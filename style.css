@@ -29,6 +29,7 @@ License URI: http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
 
 /* imports */
 @import url(http://fonts.googleapis.com/css?family=Merriweather:400,400italic,700|Source+Code+Pro|Bitter:700);
+@import url(css/genericons.css);
 
 /* reset */
 /* http://meyerweb.com/eric/tools/css/reset/ 
