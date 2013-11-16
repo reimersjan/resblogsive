@@ -10,7 +10,6 @@ Tags: blue, white, light, one-column, flexible-width, custom-header, custom-menu
 License: GNU General Public License (GPL) 2.0
 License URI: http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
 
-  ■ imports
   ■ reset
   ■ the very basics
   ■ WordPress basics
@@ -26,10 +25,6 @@ License URI: http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
   ■ responsiveness
   ■ dirty little helpers
 */
-
-/* imports */
-@import url(http://fonts.googleapis.com/css?family=Merriweather:400,400italic,700|Source+Code+Pro|Bitter:700);
-@import url(css/genericons.css);
 
 /* reset */
 /* http://meyerweb.com/eric/tools/css/reset/ 
