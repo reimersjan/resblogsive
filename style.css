@@ -251,9 +251,15 @@ code {
   font-size: 0.85em;
 }
 p.meta {
-  text-align: center;
   font-size: 1.25em;
   line-height: 2em;
+}
+time::before {
+  content: '\f303';
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  font: normal 32px/1 'Genericons';
+  vertical-align: middle;
 }
 input, textarea {
   font-family: 'Merriweather', Georgia, Times, 'Times New Roman', serif;
@@ -284,7 +290,7 @@ a:link, a:visited {
   text-decoration: underline;
 }
 a:hover, a:active {
-  color: #000;
+  color: #333;
 }
 h1 a:link, h1 a:visited {
 	color: #fff;
@@ -293,6 +299,9 @@ h1 a:link, h1 a:visited {
 h1 a:hover, h1 a:active {
 	color: #E5E5E5;
 }
+h2 a:link {
+  text-decoration: none;
+}
 #access a {
   padding: 0.1em 0.2em;
   text-decoration: none;
@@ -300,11 +309,9 @@ h1 a:hover, h1 a:active {
 #access .current:hover {
   border-bottom: none;
 }
-.footer-beta a {
-  margin: 0 0.25em;
-}
-.footer-beta a:hover {
-  cursor: pointer;
+footer a:link,
+footer a:visited {
+  color: #fff;
 }
 .social a {
   text-decoration: none;
@@ -313,6 +320,7 @@ h1 a:hover, h1 a:active {
 /* colors, borders, backgrounds */
 body {
   background: #fff;
+  color: #333;
 }
 header {
   color: #555;
@@ -450,6 +458,11 @@ article, .comments {
   margin: 5em 0;
   padding: 0 0 3.5em 0;
 }
+body.blog .wp-post-image {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+}
 blockquote {
   margin: 1em 0;
   padding: 0.0001em 1em;
@@ -483,11 +496,11 @@ p {
 p.meta {
   margin: 1.5em 0 0 0;
 }
-p.meta > * {
-  margin-right: 1em;
+.post-categories li {
+  display: inline;
 }
-p.meta:last-child {
-  margin-right: 0;
+.post-categories li::before {
+  display: none;
 }
 ul {
   margin: 2em 0;
@@ -586,9 +599,6 @@ textarea {
   .content {
     padding: 0 1.5em;
   }
-  time {
-    display: block;
-  }
   code {
     font-size: 1.4em;
   }
@@ -652,9 +662,6 @@ textarea {
   }
   code {
     font-size: 1.5em;
-  }
-  time {
-    display: block;
   }
 }
 
