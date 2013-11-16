@@ -6,7 +6,11 @@
 		
 			<h2><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permalink to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 			
-			<?php get_the_excerpt(); ?>
+			<?php
+					if ( has_post_thumbnail() ) {
+						the_post_thumbnail( array(1076,300) );
+					}
+			?>
 			
 		</article>
 		

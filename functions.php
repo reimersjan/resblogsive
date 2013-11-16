@@ -8,6 +8,9 @@ function resblogsive_theme_features() {
 	
 	// add automatic feed links to <head>
 	add_theme_support( 'automatic-feed-links' );
+
+	// add support for featured images
+	add_theme_support( 'post-thumbnails' );
 	
 	// add some style to the backend editor
 	add_editor_style( 'css/editor-style.css' );
@@ -38,7 +41,6 @@ function resblogsive_theme_features() {
 		return preg_replace('/<p>\s*(<a .*>)?\s*(<blockquote .* \/blockquote>)\s*(<\/a>)?\s*<\/p>/iU', '\1\2\3', $content);
 		return preg_replace('/<p>\s*(<a .*>)?\s*(<code .* \/code>)\s*(<\/a>)?\s*<\/p>/iU', '\1\2\3', $content);
 	}
-
 	add_filter('the_content', 'filter_ptags_on_images');
 	
 }
