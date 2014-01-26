@@ -20,6 +20,7 @@ License URI: http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
     ■ header
     ■ nav
     ■ content
+      ■ comments
       ■ input, textarea
     ■ footer
   ■ responsiveness
@@ -216,7 +217,7 @@ p, li, address {
   word-spacing: 0.2em;
   hyphens: auto;
   font-weight: 400;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   line-height: 1.6em;
 }
 li li {
@@ -518,6 +519,17 @@ li li {
 	
 }
 
+/* comments */
+.comment-author {
+	display: block;
+}
+.comment-author > * {
+	display: inline;
+}
+.comment-meta {
+	
+}
+
 /* input, textarea */
 input, textarea {
 	margin: 1em 0;
@@ -540,8 +552,12 @@ textarea {
 /* responsiveness */
 @media (min-width: 100em) {
   header {
-    background: rgba(0, 0, 0, 0.1) url('http://lorempixel.com/g/1600/400/nature/5/') center center no-repeat;
+    background-position: center center;
+    background-repeat: no-repeat;
     background-size: cover;
+  }
+  h1 {
+	  margin: 1em 0;
   }
 }
 @media (min-width: 75em) and (max-width: 100em) {
