@@ -1,15 +1,3 @@
-<?php
-
-	if(!empty($_SERVER['SCRIPT_FILENAME']) && 'comments.php' == basename($_SERVER['SCRIPT_FILENAME']))
-	die ('Please do not load this page directly. Thanks!');
-	
-	if( post_password_required() ) { ?>
-		This post is password protected. Enter password to view replies.
-	<?php
-		return;
-	}
-?>
-
 <?php if ( have_comments() ) : ?>
 
 	<h3 id="comments"><?php comments_number('No Comments', 'One Comment', '% Comments'); ?></h3>
@@ -20,7 +8,7 @@
 	</div>
 	
 	<ol class="commentlist">
-		<?php wp_list_comments(); ?>
+		<?php wp_list_comments( 'avatar_size=64&format=html5' ); ?>
 	</ol>
 	
 	<div class="navigation">
