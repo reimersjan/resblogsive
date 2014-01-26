@@ -446,7 +446,7 @@ h1 {
 }
 
 /* content */
-.content {
+main {
   padding: 0 2em;
 }
 article, .comments {
@@ -591,7 +591,7 @@ textarea {
   .nav-close {
     display: none;
   }
-  .content {
+  main {
     padding: 0 1.5em;
   }
   code {
@@ -652,7 +652,7 @@ textarea {
   .wrapper {
     margin: 1em auto;
   }
-  .content {
+  main {
     padding: 0 1em;
   }
   code {

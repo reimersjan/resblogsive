@@ -20,4 +20,4 @@
 
 <div class="wrapper">
 
-	<section class="content">
+	<main>
