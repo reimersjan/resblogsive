@@ -5,7 +5,7 @@ Description: a responsive blog theme
 Version: 0.5
 Author: Jan Reimers
 Author URI: http://janreimers.net
-Tags: blue, white, light, one-column, flexible-width, custom-header, custom-menu, editor-style, featured-images, flexible-header
+Tags: blue, white, light, one-column, responsive-layout, custom-header, custom-menu, editor-style, featured-images, flexible-header
 
 License: GNU General Public License (GPL) 2.0
 License URI: http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
@@ -180,7 +180,7 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
-header, footer {
+header, .footer {
   text-align: center;
 }
 h1, h2, h3, h4, h5, h6 {
@@ -257,6 +257,28 @@ time::before {
   font: normal 32px/1 'Genericons';
   vertical-align: middle;
 }
+.post-categories::before {
+  content: '\f301';
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  font: normal 32px/1 'Genericons';
+  vertical-align: middle;
+}
+.tags::before {
+  content: '\f302';
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  font: normal 32px/1 'Genericons';
+  vertical-align: middle;
+}
+#comments::before {
+  content: '\f300';
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  font: normal 32px/1 'Genericons';
+  vertical-align: middle;
+}
+
 input, textarea {
   font-family: 'Merriweather', Georgia, Times, 'Times New Roman', serif;
 }
@@ -266,7 +288,7 @@ input {
 .recommend li {
   line-height: 2em;
 }
-footer p {
+.footer p {
   hyphens: none;
   font-size: 1.2em;
 }
@@ -305,8 +327,8 @@ h2 a:link {
 #access .current:hover {
   border-bottom: none;
 }
-footer a:link,
-footer a:visited {
+.footer a:link,
+.footer a:visited {
   color: #fff;
 }
 .social a {
@@ -320,8 +342,11 @@ body {
 }
 header {
   color: #555;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-footer, #access {
+.footer, #access {
   background: rgb(52, 73, 94);
   color: #fff;
 }
@@ -412,7 +437,7 @@ li li li::before {
   margin: 1em auto;
   max-width: 71.25em;
 }
-header, footer {
+header, .footer {
   padding: 1em 2em;
 }
 
@@ -421,8 +446,8 @@ header {
   height: auto;
 }
 h1 {
-  margin: 1em 0;
   padding: 0.25em;
+  margin: 15vh 0;
 }
 
 /* nav */
@@ -455,7 +480,7 @@ article, .comments {
   padding: 0 0 3.5em 0;
 }
 body.blog .wp-post-image {
-  width: 50%;
+  width: 100%;
   height: auto;
 }
 blockquote {
@@ -550,22 +575,11 @@ textarea {
 
 /* responsiveness */
 @media (min-width: 100em) {
-  header {
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  h1 {
-	  margin: 1em 0;
-  }
+
 }
 @media (min-width: 75em) and (max-width: 100em) {
   html {
     font-size: 16px;
-  }
-  header {
-    background: rgba(0, 0, 0, 0.1) url('http://lorempixel.com/g/1200/300/nature/4/') center center no-repeat;
-    background-size: cover;
   }
   code {
     font-size: 1.4em;
@@ -574,10 +588,6 @@ textarea {
 @media (min-width: 48em) and (max-width: 75em) {
   html {
     font-size: 13px;
-  }
-  header {
-    background: rgba(0, 0, 0, 0.1) url('http://lorempixel.com/g/990/248/nature/3/') center center no-repeat;
-    background-size: cover;
   }
   .wrapper {
     margin: 1.75em auto;
@@ -590,15 +600,8 @@ textarea {
   html {
     font-size: 12px;
   }
-  header, footer {
+  header, .footer {
     padding: 0.75em 1.5em;
-  }
-  header {
-    background: rgba(0, 0, 0, 0.1) url('http://lorempixel.com/g/770/192/nature/2/') center center no-repeat;
-    background-size: cover;
-  }
-  h1 {
-    margin: 0.75em 0;
   }
   .wrapper {
     margin: 1.5em auto;
@@ -620,15 +623,8 @@ textarea {
   html {
     font-size: 11px;
   }
-  header, footer {
+  header, .footer {
     padding: 0.5em 1em;
-  }
-  header {
-    background: rgba(0, 0, 0, 0.1) url('http://lorempixel.com/g/480/120/nature/1/') center center no-repeat;
-    background-size: cover;
-}
-  h1 {
-    margin: 0.5em 0;
   }
   .main-nav {
     position: fixed;
