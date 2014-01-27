@@ -4,7 +4,7 @@
 	
 		<?php while (have_posts()) : the_post(); ?>
 		
-			<article class="post" id="post-<?php the_ID(); ?>">
+			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 				<p class="meta">
 					<time><?php the_time('F jS, Y'); ?></time> - by <?php the_author(); ?>
@@ -16,7 +16,7 @@
 
 				<p class="meta">
 					<?php the_category(); ?>
-					<?php the_tags(); ?>
+					<p class="tags"><?php the_tags(); ?></p>
 				</p>
 			</article>
 			
