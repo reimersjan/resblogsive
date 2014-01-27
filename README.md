@@ -8,7 +8,7 @@ soon to be a responsive blog theme for WordPress
 
 ## Installation
 
-*Don't use **Resblogsive** on a productive site, yet!*
+*Don't use __Resblogsive__ on a productive site, yet!*
 
 *It's under development right now. Please wait for version 1.0*
 
