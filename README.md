@@ -4,7 +4,12 @@ soon to be a responsive blog theme for WordPress
 
 ## About
 
-**Resblogsive** is a responsive and clean blogging theme with a strong focus on readability. It puts your content first by adjusting the typography for every screen size and device.
+**Resblogsive** is a responsive and clean blogging theme with a strong focus on readability. It puts your content first by adjusting the typography for every screen size and device. It utilizes HTML5 elements and CSS3 styling to present  the content in the most semantic and organized way.
+
+- Responsive and clean
+- Strong focus on readability
+- Valid HTML5 & CSS3
+- Free & Open-Source
 
 ## Installation
 
