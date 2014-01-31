@@ -1,5 +1,5 @@
 <?php 
-	$attachment_id = get_post_thumbnail_id( $post_id );
+	$attachment_id = get_post_thumbnail_id();
 	$image_attributes = wp_get_attachment_image_src( $attachment_id, 'full' );
 ?> 
 
