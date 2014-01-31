@@ -188,12 +188,17 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Bitter', Georgia, Times, 'Times New Roman', serif;
   line-height: 1.2em;
 }
-h1 {
+h1 a,
+body.single h1 {
   letter-spacing: 0.05em;
   font-size: 3.8em;
+  line-height: 2em;
 }
 h1 small {
+  font-size: 1.5em;
   font-style: italic;
+  letter-spacing: 0.05em;
+  line-height: 2em;
 }
 #access {
   font-size: 0.9em;
