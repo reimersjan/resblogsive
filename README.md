@@ -25,4 +25,4 @@ View a static non-CMS version of **Resblogsive** live [on CodePen](http://codepe
 
 ![Screenshot](http://f.cl.ly/items/1V1p1s2Y1X2J252V3L0t/Bildschirmfoto%202013-08-30%20um%2009.11.48.png)
 
-&copy; Copyleft 2014 - [GPL 2.0](http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt) - Jan Reimers
+&copy; Copyleft 2014 - [GPL](http://www.gnu.org/licenses/gpl-3.0.html) - Jan Reimers
