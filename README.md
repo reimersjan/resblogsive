@@ -7,12 +7,6 @@
 - Valid HTML5 & CSS3
 - Free & Open-Source
 
-## Features
-
-- [Genericons](http://genericons.com/) included
-- Beautiful default header photos by [Christoph Duplo](http://iftheycansocani.com/)
-- more to come...
-
 ## Installation
 
 *Don't use __Resblogsive__ on a productive site, yet!*

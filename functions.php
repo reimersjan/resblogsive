@@ -16,7 +16,7 @@ function resblogsive_theme_features() {
 	add_editor_style( 'css/editor-style.css' );
   
   // add translation-support aka textdomain
-  load_theme_textdomain( 'resblogsive', TEMPLATEPATH.'/languages' );
+  load_theme_textdomain( 'resblogsive', get_template_directory() . '/languages' );
 
 	// custom header images
 	$header_args = array(
@@ -31,11 +31,25 @@ function resblogsive_theme_features() {
 		'uploads'				=> true,
 	);
 	add_theme_support( 'custom-header', $header_args );
+  
+  // Add theme support for Custom Background
+	$background_args = array(
+		'default-color'          => '#ffffff',
+    'default-image'          => '',
+		'wp-head-callback'       => '_custom_background_cb',
+		'admin-head-callback'    => '',
+		'admin-preview-callback' => '',
+	);
+	add_theme_support( 'custom-background', $background_args );
 
 	// register navigation menu
 	register_nav_menus( array(
 		'primary' => __( 'Primary Navigation', 'resblogsive' ),
 	));
+  
+  // set content width
+	if ( ! isset( $content_width ) )
+		$content_width = 1076;
 
 }
 

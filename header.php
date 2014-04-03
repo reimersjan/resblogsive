@@ -7,8 +7,8 @@
 <head>
 	<title><?php wp_title( '-', true, 'right' ); bloginfo( 'name' ); ?></title>
 	<meta charset="<?php bloginfo('charset'); ?>" />
-	<link href="<?php bloginfo('template_url'); ?>/images/favicon.ico" rel="shortcut icon" />
-	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<link href="<?php echo get_template_directory(); ?>/images/favicon.ico" rel="shortcut icon" />		
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimal-ui" />
 	<?php wp_head(); ?>
 </head>
 
