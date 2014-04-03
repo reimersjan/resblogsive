@@ -14,6 +14,9 @@ function resblogsive_theme_features() {
 
 	// add some style to the backend editor
 	add_editor_style( 'css/editor-style.css' );
+  
+  // add translation-support aka textdomain
+  load_theme_textdomain( 'resblogsive', TEMPLATEPATH.'/languages' );
 
 	// custom header images
 	$header_args = array(

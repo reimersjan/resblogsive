@@ -1,5 +1,5 @@
 <?php get_header(); ?>
 
-  <h2>Error 404 - Here's nothing</h2>
+  <h2><?php _e('Error 404 - Here&#39;s nothing', 'resblogsive'); ?></h2>
 
 <?php get_footer(); ?>
