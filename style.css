@@ -109,7 +109,7 @@ img {
   margin: 0 0 1em 2em;
 }
 .alignnone {
-    
+  /* this needs work */
 }
 .aligncenter,
 div.aligncenter {
@@ -122,12 +122,11 @@ div.aligncenter {
 .alignleft {
   float: left;
 }
-
 a img.alignright {
   float: right;
 }
 a img.alignnone {
-
+ /* this needs work */
 }
 a img.alignleft {
   float: left;
