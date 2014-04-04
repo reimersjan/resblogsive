@@ -1,14 +1,8 @@
-//$(document).ready(function() {
-//  $(window).scrollTop(
-//    $('nav').offset().top
-//  );
-//});
-
 jQuery('.nav-trigger').click(function() {
-  $('.main-nav').addClass('showit');
-  $('.nav-close').addClass('showit');
+  jQuery('.main-nav').addClass('showit');
+  jQuery('.nav-close').addClass('showit');
 });
 jQuery('.nav-close').click(function() {
-  $('.main-nav').removeClass('showit');
-  $('.nav-close').removeClass('showit');
+  jQuery('.main-nav').removeClass('showit');
+  jQuery('.nav-close').removeClass('showit');
 });
