@@ -20,7 +20,7 @@ function resblogsive_theme_features() {
 
 	// custom header images
 	$header_args = array(
-		'default-image'			=> '%s/images/headers/blurry.jpg',
+		'default-image'			=> 'get_template_directory_uri() . /images/headers/blurry.jpg',
 		'width'					=> 1600,
 		'height'				=> 400,
 		'flex-width'			=> true,

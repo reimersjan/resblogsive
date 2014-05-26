@@ -28,7 +28,7 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 */
 
 /* reset */
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -42,8 +42,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
   margin: 0;
@@ -54,7 +54,7 @@ time, mark, audio, video {
   font-size: 100%;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
@@ -79,7 +79,7 @@ table {
 
 /* the very basics */
 
-* { 
+* {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -93,10 +93,9 @@ button, .button { cursor: pointer; }
 del { text-decoration: line-through; }
 ins { border-bottom: 3px double; text-decoration: none; }
 img {
-  padding: 0.2em; 
+  padding: 0.2em;
   max-width: 100%;
   height: auto;
-  border: 0.2em solid rgba(52, 73, 94, 0.2);
 }
 
 /* WordPress basics */
@@ -165,8 +164,8 @@ a img.aligncenter {
   line-height: 17px;
 }
 .wp-smiley { /* remove the img border from smileys */
-  border: none; 
-  padding: 0; 
+  border: none;
+  padding: 0;
 }
 
 /* typography */
@@ -273,13 +272,13 @@ time::before {
   font: normal 32px/1 'Genericons';
   vertical-align: middle;
 }
-#comments::before {
+/* #comments::before {
   content: '\f300';
   display: inline-block;
   -webkit-font-smoothing: antialiased;
   font: normal 32px/1 'Genericons';
   vertical-align: middle;
-}
+} */
 
 input, textarea {
   font-family: 'Merriweather', Georgia, Times, 'Times New Roman', serif;
@@ -341,6 +340,13 @@ h2 a:link {
 body {
   background: #fff;
   color: #333;
+}
+article img {
+  border: 0.2em solid rgba(52, 73, 94, 0.2);
+}
+img.avatar {
+  border: none;
+  vertical-align: middle;
 }
 header {
   color: #555;
@@ -449,7 +455,7 @@ header {
 }
 h1 {
   padding: 0.25em;
-  margin: 10vh 0;
+  margin: 7vh 0;
 }
 
 /* nav */
@@ -542,7 +548,7 @@ li li {
   padding: 0 0 0 1em;
 }
 .sticky {
-	
+
 }
 
 /* comments */
@@ -553,13 +559,13 @@ li li {
 	display: inline;
 }
 .comment-meta {
-	
+
 }
 
 /* input, textarea */
 input, textarea {
 	margin: 1em 0;
-	padding: 1em; 
+	padding: 1em;
 	width: 100%;
 }
 textarea {
