@@ -7,7 +7,7 @@ function resblogsive_theme_features() {
 	// remove_action('wp_head', 'wp_generator');
 
 	// add automatic feed links to <head>
-	// add_theme_support( 'automatic-feed-links' );
+	add_theme_support( 'automatic-feed-links' );
 
 	// add support for featured images
 	add_theme_support( 'post-thumbnails' );

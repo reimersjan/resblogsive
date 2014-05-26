@@ -15,6 +15,7 @@
 	<?php else : ?>
 		<h2><?php _e('Nothing Found', 'resblogsive'); ?></h2>
 	<?php endif; ?>
-	
+
 	<?php comments_template(); ?>
+	<?php wp_link_pages(); ?>
 <?php get_footer(); ?>
