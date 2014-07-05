@@ -15,9 +15,9 @@
 
 ### Give it a Test-Drive
 
-- [Download](https://github.com/reimersjan/resblogsive/releases) the latest version
+- [Download](https://github.com/reimersjan/resblogsive/archive/master.zip) the latest version
 - Upload the .zip file in the WordPress Dashboard via *Themes > Add New > Upload*
-- Activate it. Done! 
+- Activate it. Done!
 
 ## CodePen Demo
 
