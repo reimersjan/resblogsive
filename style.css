@@ -197,7 +197,7 @@ h1 small {
   letter-spacing: 0.05em;
   line-height: 2em;
 }
-#access {
+.access {
   font-size: 0.9em;
 }
 h2 {
@@ -322,11 +322,11 @@ h1 a:hover, h1 a:active {
 h2 a:link {
   text-decoration: none;
 }
-#access a {
+.access a {
   padding: 0.1em 0.2em;
   text-decoration: none;
 }
-#access .current:hover {
+.access .current:hover {
   border-bottom: none;
 }
 .footer a:link,
@@ -366,17 +366,20 @@ h1 {
 h2, h3, h4, h5, h6 {
   color: rgba(0, 0, 0, 0.7);
 }
-#access a,
+.access {
+  background: rgb(52, 73, 94);
+}
+.access a,
 .page-footer a {
   color: #ddd;
 }
 .page-footer a:hover {
   color: #fff;
 }
-#access .current {
+.access .current {
   color: #fff;
 }
-#access a:hover {
+.access a:hover {
   border-bottom: 0.15em solid #ddd;
 }
 button,
@@ -460,19 +463,19 @@ h1 {
 }
 
 /* nav */
-#access {
+.access {
   display: block;
   margin: 0;
   padding: 0 0 0 2em;
 }
-#access ul {
+.access ul {
 	margin: 0;
 }
-#access li {
+.access li {
   display: inline-block;
   padding: 1em 2em 1em 0;
 }
-#access li::before {
+.access li::before {
   content: "";
 }
 .nav-trigger,
@@ -635,7 +638,7 @@ textarea {
   header, .footer {
     padding: 0.5em 1em;
   }
-  .main-nav {
+  .access {
     position: fixed;
     top: 0;
     left: 0;
@@ -645,29 +648,34 @@ textarea {
     height: 100%;
     opacity: 0.9;
   }
-  .main-nav li {
+  .access li {
     display: block;
     padding: 1em 0;
     text-align: center;
     font-size: 2em;
   }
   .nav-trigger {
-    display: inline-block;
-    margin: 1em;
-    padding: 0em 1.2em;
-  }
-  .nav-trigger span {
     display: block;
-    font-weight: bold;
-    font-size: 4em;
+    margin: 0.25em;
+    padding: 0.25em;
+    opacity: 0.85;
+    position: fixed;
+    top: 0;
+    right: 0;
+    font-size: 3.5em;
+    line-height: 1;
+    width: inherit;
+    height: inherit;
   }
   .nav-close {
     position: fixed;
     top: 0.25em;
-    left: 0.25em;
+    right: 0.25em;
     z-index: 999;
-    padding: 0 0.45em;
-    font-size: 4em;
+    padding: 0.25em;
+    font-size: 3.5em;
+    width: inherit;
+    height: inherit;
   }
   .wrapper {
     margin: 1em auto;
