@@ -647,6 +647,7 @@ textarea {
     width: 100%;
     height: 100%;
     opacity: 0.9;
+    overflow: scroll;
   }
   .access li {
     display: block;
