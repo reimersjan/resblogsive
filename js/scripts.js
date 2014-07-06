@@ -7,6 +7,7 @@ jQuery(document).ready(function() {
   });
   jQuery('.nav-close').click(function() {
     jQuery('.access').removeClass('showit');
+    jQuery('body').css('overflow', 'scroll');
     jQuery('.nav-close').removeClass('showit');
     jQuery('.nav-trigger').removeClass('hideit');
   });
