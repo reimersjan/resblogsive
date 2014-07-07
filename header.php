@@ -21,7 +21,6 @@
 	</nav>
 	<?php if ( has_post_thumbnail() ): ?>
 		<header style="background-image: url(<?php echo $image_attributes[0]; ?>);">
-	}
 	<?php else : ?>
 		<header style="background-image: url(<?php header_image(); ?>);">
 	<?php endif; ?>
