@@ -53,7 +53,7 @@ function resblogsive_theme_features() {
 
 	// enqueue scripts and styles.
 	function resblogsive_stylesnscripts() {
-		wp_enqueue_style( 'brickfonts', '//brick.a.ssl.fastly.net/Bitter:700/Merriweather:400,700,400i/Source+Code Pro:400' );
+		wp_enqueue_style( 'brickfonts', '//brick.a.ssl.fastly.net/Bitter:700,700i/Merriweather:400,700,400i/Source+Code Pro:400' );
 		wp_enqueue_style( 'genericons', get_template_directory_uri() . '/css/genericons.css' );
 		wp_enqueue_style( 'resblogsive-style', get_stylesheet_uri() );
 		// wp_enqueue_style( 'googlefonts', 'http://fonts.googleapis.com/css?family=Merriweather:400,400italic,700|Source+Code+Pro|Bitter:700' );
