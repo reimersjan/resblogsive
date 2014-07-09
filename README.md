@@ -11,12 +11,17 @@ Current Version: 0.7 (development)
 - Responsive and clean
 - Strong focus on readability
 - Valid HTML5 & CSS3
-- Free & Open-Source
 - NO Sidebar - **Content is Queen!**
 - *"Webfonts that actually look good"* by [brick.im](http://brick.im)
 - [Genericons](http://genericons.com/) Icon-Font
 - 3 beautiful default header images by [Christoph Duplo](http://iftheycansocani.com)
 - Licensed under [GPLv3](https://github.com/reimersjan/resblogsive/LICENSE)
+
+## Translations
+
+- English
+- German
+- [add your own language](https://github.com/reimersjan/resblogsive/tree/master/languages) on GitHub
 
 ## Installation
 
