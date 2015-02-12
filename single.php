@@ -2,15 +2,14 @@
 	<?php if (have_posts()) : ?>
 		<?php while (have_posts()) : the_post(); ?>
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-				<p class="meta">
-					<time datetime="<?php the_time('Y-m-d H:i'); ?>"><?php the_time('F jS, Y'); ?></time> - <?php _e('by', 'resblogsive'); ?> <?php the_author(); ?>
-				</p>
 				<?php the_content(); ?>
-				<p class="meta">
-					<?php the_category(); ?>
-					<?php the_tags(); ?>
-				</p>
 			</article>
+				<p class="meta">
+						<time datetime="<?php the_time('Y-m-d H:i'); ?>"><?php _e('published on', 'resblogsive') ?> <?php the_time('F jS, Y'); ?></time> &mdash; <?php _e('by', 'resblogsive'); ?> <?php the_author(); ?>
+					<p class="categories">Categories: <?php the_category( ', ' ); ?></p>
+					<p class="tags"><?php the_tags('Tags: ', ', '); ?></p>
+				</p>
+
 		<?php endwhile; ?>
 	<?php else : ?>
 		<h2><?php _e('Nothing Found', 'resblogsive'); ?></h2>

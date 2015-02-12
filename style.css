@@ -249,7 +249,7 @@ code {
   font-size: 0.85rem;
 }
 p.meta {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   line-height: 2;
 }
 time::before {
@@ -259,7 +259,11 @@ time::before {
   font: normal 32px/1 'Genericons';
   vertical-align: middle;
 }
-.post-categories::before {
+p.categories,
+p.tags {
+  font-size: 1.1rem;
+}
+.categories::before {
   content: '\f301';
   display: inline-block;
   -webkit-font-smoothing: antialiased;
@@ -361,6 +365,7 @@ header {
 }
 h1 {
   color: #fff;
+  text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.6);
 }
 h1 > * {
   /* display: inline-block; */
