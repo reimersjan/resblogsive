@@ -3,9 +3,6 @@
 // custom resblogsive theme features
 function resblogsive_theme_features() {
 
-	// remove generator-tag from <head>
-	// remove_action('wp_head', 'wp_generator');
-
 	// add automatic feed links to <head>
 	add_theme_support( 'automatic-feed-links' );
 
@@ -56,7 +53,6 @@ function resblogsive_theme_features() {
 		wp_enqueue_style( 'brickfonts', '//brick.a.ssl.fastly.net/Bitter:700,700i/Merriweather:400,700,400i/Source+Code Pro:400' );
 		wp_enqueue_style( 'genericons', get_template_directory_uri() . '/css/genericons.css' );
 		wp_enqueue_style( 'resblogsive-style', get_stylesheet_uri() );
-		// wp_enqueue_style( 'googlefonts', 'http://fonts.googleapis.com/css?family=Merriweather:400,400italic,700|Source+Code+Pro|Bitter:700' );
 		wp_enqueue_script( 'jquery', true );
 		wp_enqueue_script( 'resblogsive-js', get_template_directory_uri() . '/js/scripts.js', array( 'jquery' ), '', true );
 	}

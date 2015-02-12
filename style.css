@@ -79,7 +79,6 @@ table {
 }
 
 /* the very basics */
-
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -164,7 +163,7 @@ a img.aligncenter {
   font-size: 1rem;
   line-height: 17px;
 }
-.wp-smiley { /* remove the img border from smileys */
+.wp-smiley {
   border: none;
   padding: 0;
 }
@@ -368,7 +367,6 @@ h1 {
   text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.6);
 }
 h1 > * {
-  /* display: inline-block; */
   text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.6);
   padding: 0 0.2rem;
 }
@@ -421,7 +419,7 @@ article, .comments {
   border-bottom: 0.4rem solid rgba(0, 0, 0, 0.1);
 }
 blockquote {
-  border-left: 0.5rem solid rgba(52, 73, 94, 0.7); /* rgba(0, 0, 0, 0.4) */
+  border-left: 0.5rem solid rgba(52, 73, 94, 0.7);
   color: #555;
 }
 cite {
