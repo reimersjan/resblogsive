@@ -101,7 +101,7 @@ code::before {
   background: rgb(52, 73, 94);
   color: #fff;
 }
-p.meta {
+p.meta, p.categories, p.tags {
   color: #555;
 }
 ul li::before {
