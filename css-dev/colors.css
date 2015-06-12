@@ -84,7 +84,7 @@ cite {
   color: rgb(52, 73, 94);
 }
 code, pre {
-  border: 0.125rem solid rgba(52, 73, 94, 0.2);
+  
   background: rgba(52, 73, 94, 0.1);
   color: #555;
 }

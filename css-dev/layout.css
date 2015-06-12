@@ -66,9 +66,6 @@ pre {
   padding: 1rem 1.5rem;
   max-width: 100%;
 }
-code {
-  padding: 0 0.25rem;
-}
 pre::before  {
   float: right;
   margin: -1.25rem 0 0 0;
