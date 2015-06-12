@@ -46,7 +46,10 @@ h6 {
 }
 p, li, address {
   word-spacing: .2rem;
-  hyphens: auto;
+  -webkit-hyphens: auto;
+     -moz-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
   font-weight: 400;
   font-size: 1.5rem;
   line-height: 1.6;
@@ -125,7 +128,10 @@ input {
   line-height: 2;
 }
 .footer p {
-  hyphens: none;
+  -webkit-hyphens: none;
+     -moz-hyphens: none;
+      -ms-hyphens: none;
+          hyphens: none;
   font-size: 1.2rem;
 }
 .footer-beta {
