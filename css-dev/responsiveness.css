@@ -1,7 +1,6 @@
 /* responsiveness */
-@media (min-width: 100rem) {
 
-}
+@media (min-width: 100rem) {}
 @media (min-width: 75rem) and (max-width: 100rem) {
   html {
     font-size: 16px;

@@ -1,4 +1,5 @@
 /* WordPress basics */
+
 .alignleft {
   float: left;
   margin: 0 2rem 1rem 0;
@@ -10,13 +11,12 @@
 .alignnone {
   /* this needs work */
 }
-.aligncenter,
-div.aligncenter {
+.aligncenter, div.aligncenter {
   display: block;
   margin: 0 auto;
 }
 .alignright {
-  float:right;
+  float: right;
 }
 .alignleft {
   float: left;
@@ -25,7 +25,7 @@ a img.alignright {
   float: right;
 }
 a img.alignnone {
- /* this needs work */
+  /* this needs work */
 }
 a img.alignleft {
   float: left;

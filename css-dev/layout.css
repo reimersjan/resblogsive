@@ -1,4 +1,5 @@
 /* layout */
+
 .wrapper {
   margin: 1rem auto;
   max-width: 71.25rem;
@@ -8,6 +9,7 @@ header, .footer {
 }
 
 /* header */
+
 header {
   height: auto;
 }
@@ -17,13 +19,14 @@ header h1 {
 }
 
 /* nav */
+
 .access {
   display: block;
   margin: 0;
   padding: 0 0 0 2rem;
 }
 .access ul {
-	margin: 0;
+  margin: 0;
 }
 .access li {
   display: inline-block;
@@ -35,12 +38,12 @@ header h1 {
 .access li::before {
   content: "";
 }
-.nav-trigger,
-.nav-close {
+.nav-trigger, .nav-close {
   display: none;
 }
 
 /* content */
+
 main {
   padding: 0 2rem;
 }
@@ -66,7 +69,7 @@ pre {
   padding: 1rem 1.5rem;
   max-width: 100%;
 }
-pre::before  {
+pre::before {
   float: right;
   margin: -1.25rem 0 0 0;
   padding: .5rem 1rem;
@@ -105,32 +108,31 @@ li {
 li li {
   padding: 0 0 0 1rem;
 }
-.sticky {
-
-}
+.sticky {}
 
 /* comments */
+
 .comment-author {
-	display: block;
+  display: block;
 }
 .comment-author > * {
-	display: inline;
+  display: inline;
 }
-.comment-meta {
-
-}
+.comment-meta {}
 
 /* input, textarea */
+
 input, textarea {
-	margin: 1rem 0;
-	padding: 1rem;
-	width: 100%;
+  margin: 1rem 0;
+  padding: 1rem;
+  width: 100%;
 }
 textarea {
-	resize: vertical;
+  resize: vertical;
 }
 
 /* footer */
+
 .page-footer {
   margin-top: 5rem;
 }

@@ -1,17 +1,32 @@
 /* the very basics */
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-
-body { margin: 0; }
-em { font-style: oblique; }
-strong { font-weight: 700; }
-small { font-size: 50%; }
-button, .button { cursor: pointer; }
-del { text-decoration: line-through; }
-ins { border-bottom: 3px double; text-decoration: none; }
+body {
+  margin: 0;
+}
+em {
+  font-style: oblique;
+}
+strong {
+  font-weight: 700;
+}
+small {
+  font-size: 50%;
+}
+button, .button {
+  cursor: pointer;
+}
+del {
+  text-decoration: line-through;
+}
+ins {
+  border-bottom: 3px double;
+  text-decoration: none;
+}
 img {
   padding: .2rem;
   max-width: 100%;
