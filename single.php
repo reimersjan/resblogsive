@@ -5,7 +5,7 @@
 				<?php the_content(); ?>
 			</article>
 				<p class="meta">
-						<time datetime="<?php the_time('Y-m-d H:i'); ?>"><?php _e('published on', 'resblogsive') ?> <?php the_time('F jS, Y'); ?></time> &mdash; <?php _e('by', 'resblogsive'); ?> <?php the_author(); ?>
+					<time datetime="<?php the_time('Y-m-d H:i'); ?>"><?php _e('published on', 'resblogsive') ?> <?php the_time('F jS, Y'); ?></time> &mdash; <?php _e('by', 'resblogsive'); ?> <?php the_author(); ?>
 					<p class="categories">Categories: <?php the_category(', '); ?></p>
 					<p class="tags"><?php the_tags('Tags: ', ', '); ?></p>
 				</p>
