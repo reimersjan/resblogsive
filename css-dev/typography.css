@@ -115,6 +115,15 @@ p.categories, p.tags {
   font: normal 32px/1 'Genericons';
   vertical-align: middle;
 }
+p.posts-navigation {
+  font-size: 1.1rem;
+}
+p.posts-navigation > a {
+  margin: 0 .5rem;
+}
+p.posts-navigation > a:first-child {
+  margin-left: 0;
+}
 
 /* #comments::before {
   content: '\f300';
