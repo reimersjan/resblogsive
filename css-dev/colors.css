@@ -21,11 +21,11 @@ header {
   background: rgb(52, 73, 94);
   color: #fff;
 }
-h1 {
+header h1 {
   color: #fff;
   text-shadow: 0 0 .5rem rgba(0, 0, 0, .6);
 }
-h1 > * {
+header h1 > * {
   text-shadow: 0 0 .5rem rgba(0, 0, 0, .6);
   padding: 0 .2rem;
 }
