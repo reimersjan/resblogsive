@@ -33,16 +33,6 @@ function resblogsive_theme_features()
     );
     add_theme_support('custom-header', $header_args);
 
-  // Add theme support for Custom Background
-    $background_args = array(
-        'default-color' => '#ffffff',
-    		'default-image' => '',
-        'wp-head-callback' => '_custom_background_cb',
-        'admin-head-callback' => '',
-        'admin-preview-callback' => '',
-    );
-    add_theme_support('custom-background', $background_args);
-
     // register navigation menu
     register_nav_menus(array(
         'primary' => __('Primary Navigation', 'resblogsive'),
