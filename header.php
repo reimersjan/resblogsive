@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
-	<title><?php wp_title('-', true, 'right'); bloginfo('name'); ?></title>
+	<title><?php wp_title(); ?></title>
 	<meta charset="<?php bloginfo('charset'); ?>" />
 	<link href="<?php echo get_template_directory(); ?>/images/favicon.ico" rel="shortcut icon" />
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
