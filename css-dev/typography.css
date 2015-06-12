@@ -68,6 +68,12 @@ cite {
   font-weight: 700;
   /* font-size: 1rem; temporary solution */
 }
+q::before {
+  content: "“";
+}
+q::after {
+  content: "”";
+}
 code, pre {
   font-family: 'Source Code Pro', 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
 }
@@ -79,7 +85,7 @@ pre {
 }
 code {
   font-size: 1rem;
-  padding: .25rem;
+  padding: .2rem;
 }
 p.meta {
   font-size: 1.1rem;
