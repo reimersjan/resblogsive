@@ -28,7 +28,8 @@ Tags: blue, white, light, one-column, responsive-layout, custom-header, custom-m
   * dirty little helpers
 */
 
-@import url("css-dev/reset.css");
+/* @import url("css-dev/reset.css"); */
+@import url("css-dev/html5reset.css");
 @import url("css-dev/basics.css");
 @import url("css-dev/wpbasics.css");
 @import url("css-dev/typography.css");
