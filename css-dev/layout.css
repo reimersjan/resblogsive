@@ -77,10 +77,10 @@ pre::before {
   text-transform: uppercase;
 }
 h2, h3, h4, h5, h6 {
-  margin: .5rem 0;
+  margin: 1rem 0;
 }
 p {
-  margin: 1.5rem 0;
+  margin: 0 0 2rem 0;
 }
 p.meta {
   margin: 1.5rem 0 0 0;
