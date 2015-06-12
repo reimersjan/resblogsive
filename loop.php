@@ -4,7 +4,7 @@
 			<h2><a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php _e('Permalink to', 'resblogsive'); ?> <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 			<?php the_excerpt(); ?>
 			<p class="meta">
-				<time datetime="<?php the_time('Y-m-d H:i'); ?>"><?php _e('published on', 'resblogsive') ?> <?php the_time('F jS, Y'); ?></time>
+				<time datetime="<?php the_time( get_option( 'date_format' ) ); ?>"> <?php _e('published on', 'resblogsive') ?> <?php the_time( get_option( 'date_format' ) ); ?></time>
 			</p>
 		</article>
 	<?php endwhile; ?>
