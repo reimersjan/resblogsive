@@ -7,13 +7,16 @@ function resblogsive_theme_features()
     // add automatic feed links to <head>
     add_theme_support('automatic-feed-links');
 
+    // add support for title-tag
+    add_theme_support('title-tag');
+
     // add support for featured images
     add_theme_support('post-thumbnails');
 
     // add some style to the backend editor
     add_editor_style('css/editor-style.css');
 
-  // add translation-support
+    // add translation-support
     load_theme_textdomain('resblogsive', get_template_directory().'/languages');
 
     // custom header images
