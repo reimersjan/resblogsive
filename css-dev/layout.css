@@ -60,7 +60,7 @@ blockquote {
   padding: .0001rem 1rem;
 }
 cite {
-  display: block;
+  display: inline;
   margin: 1rem 0;
 }
 pre {
