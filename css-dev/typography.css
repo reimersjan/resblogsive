@@ -1,0 +1,138 @@
+/* typography */
+body {
+  font-weight: normal;
+  font-size-adjust: auto;
+  font-family: 'Merriweather', Georgia, Times, 'Times New Roman', serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+header, .footer {
+  text-align: center;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  font-family: 'Bitter', Georgia, Times, 'Times New Roman', serif;
+  line-height: 1.2;
+}
+h1 a,
+body.single h1 {
+  letter-spacing: 0.025rem;
+  font-size: 3.8rem;
+  line-height: 1.3;
+}
+h1 small {
+  font-size: 1.5rem;
+  font-style: oblique;
+  letter-spacing: 0.05rem;
+  line-height: 2;
+}
+.access {
+  font-size: 0.9rem;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 2.5rem;
+}
+h4 {
+  font-size: 2rem;
+}
+h5 {
+  font-size: 1.5rem;
+}
+h6 {
+  font-size: 1.2rem;
+}
+p, li, address {
+  word-spacing: 0.2rem;
+  hyphens: auto;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+li li {
+  font-size: 1rem;
+}
+abbr, acronym {
+	border-bottom: 2px dotted;
+}
+blockquote {
+  font-style: italic;
+  line-height: 1.5;
+}
+cite {
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+code, pre {
+  font-family: 'Source Code Pro', 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
+}
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-size: 1.3rem;
+  line-height: 1.3;
+}
+code {
+  font-size: 0.85rem;
+}
+p.meta {
+  font-size: 1.1rem;
+  line-height: 2;
+}
+time::before {
+  content: '\f303';
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  font: normal 32px/1 'Genericons';
+  vertical-align: middle;
+}
+p.categories,
+p.tags {
+  font-size: 1.1rem;
+}
+.categories::before {
+  content: '\f301';
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  font: normal 32px/1 'Genericons';
+  vertical-align: middle;
+}
+.tags::before {
+  content: '\f302';
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  font: normal 32px/1 'Genericons';
+  vertical-align: middle;
+}
+/* #comments::before {
+  content: '\f300';
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  font: normal 32px/1 'Genericons';
+  vertical-align: middle;
+} */
+
+input, textarea {
+  font-family: 'Merriweather', Georgia, Times, 'Times New Roman', serif;
+}
+input {
+  font-size: 1rem;
+}
+.recommend li {
+  line-height: 2;
+}
+.footer p {
+  hyphens: none;
+  font-size: 1.2rem;
+}
+.footer-beta {
+  text-align: center;
+  font-size: 1.75rem;
+  line-height: 1.5;
+}
+.social li {
+  font-size: 2rem;
+  line-height: 2;
+}

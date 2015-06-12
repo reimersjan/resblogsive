@@ -1,0 +1,7 @@
+/* dirty little helpers */
+.showit {
+  display: block;
+}
+.hideit {
+  display: none;
+}

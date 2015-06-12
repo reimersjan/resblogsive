@@ -1,0 +1,110 @@
+/* colors, borders, backgrounds */
+body {
+  background: #fff;
+  color: #333;
+}
+article img {
+  border: 0.2rem solid rgba(52, 73, 94, 0.2);
+}
+img.avatar {
+  border: none;
+  vertical-align: middle;
+}
+header {
+  color: #555;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.footer, #access {
+  background: rgb(52, 73, 94);
+  color: #fff;
+}
+h1 {
+  color: #fff;
+  text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.6);
+}
+h1 > * {
+  text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.6);
+  padding: 0 0.2rem;
+}
+main h1, h2, h3, h4, h5, h6 {
+  color: rgba(0, 0, 0, 0.7);
+}
+.access {
+  background: rgb(52, 73, 94);
+}
+.access a,
+.page-footer a {
+  color: #ddd;
+}
+.page-footer a:hover {
+  color: #fff;
+}
+.access .current {
+  color: #fff;
+}
+.access a:hover {
+  border-bottom: 0.15rem solid #ddd;
+}
+button,
+.button {
+  border: none;
+  border-radius: 5px;
+  background: rgba(0,0,0,0.4);
+  color: #fff;
+}
+button:hover, .button:hover,
+button:active, .button:active,
+button:focus, .button:focus {
+  background: rgba(0,0,0,0.6);
+}
+.nav-trigger {
+  background: rgb(52, 73, 94);
+}
+.nav-close {
+  background: rgba(255,255,255,0.2);
+}
+.nav-trigger:hover,
+.nav-trigger:active {
+  background: rgba(52, 73, 94, 0.8);
+}
+.nav-close:hover,
+.nav-close:active {
+  background: rgba(0,0,0,0.3);
+}
+article, .comments {
+  border-bottom: 0.4rem solid rgba(0, 0, 0, 0.1);
+}
+blockquote {
+  border-left: 0.5rem solid rgba(52, 73, 94, 0.7);
+  color: #555;
+}
+cite {
+  color: rgb(52, 73, 94);
+}
+code, pre {
+  border: 0.125rem solid rgba(52, 73, 94, 0.2);
+  background: rgba(52, 73, 94, 0.1);
+  color: #555;
+}
+code::before {
+  background: rgb(52, 73, 94);
+  color: #fff;
+}
+p.meta {
+  color: #555;
+}
+ul li::before {
+  color: rgb(52, 73, 94);
+  content: "■ ";
+}
+li li::before {
+  color: rgba(52, 73, 94, 0.7);
+}
+li li li::before {
+  color: rgba(52, 73, 94, 0.4);
+}
+.social li::before {
+  content: "";
+}

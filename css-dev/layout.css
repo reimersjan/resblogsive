@@ -1,0 +1,143 @@
+/* layout */
+.wrapper {
+  margin: 1rem auto;
+  max-width: 71.25rem;
+}
+header, .footer {
+  padding: 1rem 2rem;
+}
+
+/* header */
+header {
+  height: auto;
+}
+header h1 {
+  padding: 0.25rem;
+  margin: 7vh 0;
+}
+
+/* nav */
+.access {
+  display: block;
+  margin: 0;
+  padding: 0 0 0 2rem;
+}
+.access ul {
+	margin: 0;
+}
+.access li {
+  display: inline-block;
+  padding: 1rem 2rem 1rem 0;
+}
+.access li li {
+  display: none;
+}
+.access li::before {
+  content: "";
+}
+.nav-trigger,
+.nav-close {
+  display: none;
+}
+
+/* content */
+main {
+  padding: 0 2rem;
+}
+article, .comments {
+  margin: 5rem 0;
+  padding: 0 0 3.5rem 0;
+}
+body.blog .wp-post-image {
+  width: 100%;
+  height: auto;
+}
+blockquote {
+  margin: 1rem 0;
+  padding: 0.0001rem 1rem;
+}
+cite {
+  display: block;
+  margin: 1rem 0;
+}
+pre {
+  display: block;
+  margin: 2rem 0;
+  padding: 1rem 1.5rem;
+  max-width: 100%;
+}
+code {
+  padding: 0 0.25rem;
+}
+pre::before  {
+  float: right;
+  margin: -1.25rem 0 0 0;
+  padding: 0.5rem 1rem;
+  content: attr(data-lang);
+  text-transform: uppercase;
+}
+h2, h3, h4, h5, h6 {
+  margin: 0.5rem 0;
+}
+p {
+  margin: 1.5rem 0;
+}
+p.meta {
+  margin: 1.5rem 0 0 0;
+}
+.post-categories li {
+  display: inline;
+}
+.post-categories li::before {
+  display: none;
+}
+ul {
+  margin: 2rem 0;
+  list-style: none;
+}
+ul ul {
+  margin: 0;
+}
+ol {
+  margin-left: 2.5rem;
+  list-style: decimal;
+}
+li {
+  padding: 0 0 0 0.5rem;
+}
+li li {
+  padding: 0 0 0 1rem;
+}
+.sticky {
+
+}
+
+/* comments */
+.comment-author {
+	display: block;
+}
+.comment-author > * {
+	display: inline;
+}
+.comment-meta {
+
+}
+
+/* input, textarea */
+input, textarea {
+	margin: 1rem 0;
+	padding: 1rem;
+	width: 100%;
+}
+textarea {
+	resize: vertical;
+}
+
+/* footer */
+.page-footer {
+  margin-top: 5rem;
+}
+.social li {
+  display: inline-block;
+  padding: 0 0.5rem;
+}
