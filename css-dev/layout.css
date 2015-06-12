@@ -12,7 +12,7 @@ header {
   height: auto;
 }
 header h1 {
-  padding: 0.25rem;
+  padding: .25rem;
   margin: 7vh 0;
 }
 
@@ -54,7 +54,7 @@ body.blog .wp-post-image {
 }
 blockquote {
   margin: 1rem 0;
-  padding: 0.0001rem 1rem;
+  padding: .0001rem 1rem;
 }
 cite {
   display: block;
@@ -69,12 +69,12 @@ pre {
 pre::before  {
   float: right;
   margin: -1.25rem 0 0 0;
-  padding: 0.5rem 1rem;
+  padding: .5rem 1rem;
   content: attr(data-lang);
   text-transform: uppercase;
 }
 h2, h3, h4, h5, h6 {
-  margin: 0.5rem 0;
+  margin: .5rem 0;
 }
 p {
   margin: 1.5rem 0;
@@ -100,7 +100,7 @@ ol {
   list-style: decimal;
 }
 li {
-  padding: 0 0 0 0.5rem;
+  padding: 0 0 0 .5rem;
 }
 li li {
   padding: 0 0 0 1rem;
@@ -136,5 +136,5 @@ textarea {
 }
 .social li {
   display: inline-block;
-  padding: 0 0.5rem;
+  padding: 0 .5rem;
 }

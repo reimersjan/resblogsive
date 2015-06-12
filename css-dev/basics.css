@@ -13,7 +13,7 @@ button, .button { cursor: pointer; }
 del { text-decoration: line-through; }
 ins { border-bottom: 3px double; text-decoration: none; }
 img {
-  padding: 0.2rem;
+  padding: .2rem;
   max-width: 100%;
   height: auto;
 }
