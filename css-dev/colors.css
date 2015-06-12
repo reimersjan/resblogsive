@@ -13,9 +13,24 @@ img.avatar {
 }
 header {
   color: #555;
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+header::after {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+  content: "";
+  background-image: url(../images/headers/meisterYoda.jpg); /* WARNING: hardcoded background image !!! */
+  opacity: 0.6;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
 }
 .footer, #access {
   background: rgb(52, 73, 94);
