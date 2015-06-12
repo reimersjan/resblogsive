@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Resblogsive\n"
 "POT-Creation-Date: 2015-06-12 13:17+0100\n"
-"PO-Revision-Date: 2015-06-12 13:23+0100\n"
+"PO-Revision-Date: 2015-06-12 13:19+0100\n"
 "Last-Translator: Jan Reimers <me@jan.rs>\n"
 "Language-Team: Jan Reimers <me@jan.rs>\n"
 "Language: en_US\n"
@@ -18,48 +18,48 @@ msgstr ""
 
 #: 404.php:3
 msgid "Error 404 - Here&#39;s nothing"
-msgstr "Error 404 - Here&#39;s nothing"
+msgstr ""
 
 #: comments.php:13 comments.php:32
 msgid "Comment navigation"
-msgstr "Comment navigation"
+msgstr ""
 
 #: comments.php:14 comments.php:33
 msgid "&larr; Older Comments"
-msgstr "&larr; Older Comments"
+msgstr ""
 
 #: comments.php:15 comments.php:34
 msgid "Newer Comments &rarr;"
-msgstr "Newer Comments &rarr;"
+msgstr ""
 
 #: comments.php:44
 msgid "Comments are closed."
-msgstr "Comments are closed."
+msgstr ""
 
 #: footer.php:5
 msgid "powered by"
-msgstr "powered by"
+msgstr ""
 
 #: footer.php:5
 msgid "and"
-msgstr "and"
+msgstr ""
 
 #: functions.php:48
 msgid "Primary Navigation"
-msgstr "Primary Navigation"
+msgstr ""
 
 #: loop.php:4
 msgid "Permalink to"
-msgstr "Permalink to"
+msgstr ""
 
 #: loop.php:7 single.php:8
 msgid "published on"
-msgstr "published on"
+msgstr ""
 
 #: loop.php:12 single.php:15
 msgid "Nothing Found"
-msgstr "Nothing Found"
+msgstr ""
 
 #: single.php:8
 msgid "by"
-msgstr "by"
+msgstr ""
