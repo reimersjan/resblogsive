@@ -131,6 +131,21 @@ textarea {
   resize: vertical;
 }
 
+/* tables */
+
+table tr {
+  border-bottom: 2px solid #E5E5E5;
+}
+table th {
+  text-align: left;
+}
+table th, table td {
+  padding: 1rem;
+}
+table th:first-child, table td:first-child {
+  padding-left: 0;
+}
+
 /* footer */
 
 .page-footer {

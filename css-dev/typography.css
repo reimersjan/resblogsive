@@ -145,6 +145,9 @@ input {
 .recommend li {
   line-height: 2;
 }
+table {
+  font-size: 1.5rem;
+}
 .footer p {
   -webkit-hyphens: none;
      -moz-hyphens: none;
