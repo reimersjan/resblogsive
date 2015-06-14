@@ -764,8 +764,15 @@ main {
 
 article,
 .comments {
-  margin: 5rem 0;
   padding: 0 0 3.5rem 0;
+}
+
+article {
+  margin: 0 0 5rem 0;
+}
+
+.comments {
+  margin: 5rem 0;
 }
 
 body.blog .wp-post-image {
