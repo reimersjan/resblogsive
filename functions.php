@@ -19,20 +19,6 @@ function resblogsive_theme_features()
     // add translation-support
     load_theme_textdomain('resblogsive', get_template_directory().'/languages');
 
-    // custom header images
-    $header_args = array(
-        'default-image' => get_template_directory_uri().'/images/headers/meisterYoda.jpg',
-        'width' => 1600,
-        'height' => 400,
-        'flex-width' => true,
-        'flex-height' => true,
-        'random-default' => false,
-        'header-text' => true,
-        'default-text-color' => '#ffffff',
-        'uploads' => true,
-    );
-    add_theme_support('custom-header', $header_args);
-
     // register navigation menu
     register_nav_menus(array(
         'primary' => __('Primary Navigation', 'resblogsive'),
