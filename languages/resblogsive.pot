@@ -1,7 +1,8 @@
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Resblogsive\n"
-"POT-Creation-Date: 2015-06-12 13:17+0100\n"
+"POT-Creation-Date: 2015-06-14 14:04+0100\n"
 "PO-Revision-Date: 2015-06-12 13:19+0100\n"
 "Last-Translator: Jan Reimers <me@jan.rs>\n"
 "Language-Team: Jan Reimers <me@jan.rs>\n"
@@ -44,7 +45,7 @@ msgstr ""
 msgid "and"
 msgstr ""
 
-#: functions.php:48
+#: functions.php:38
 msgid "Primary Navigation"
 msgstr ""
 
@@ -56,10 +57,18 @@ msgstr ""
 msgid "published on"
 msgstr ""
 
-#: loop.php:12 single.php:15
+#: loop.php:13 single.php:15
 msgid "Nothing Found"
 msgstr ""
 
 #: single.php:8
 msgid "by"
+msgstr ""
+
+#: single.php:9
+msgid "Categories"
+msgstr ""
+
+#: single.php:10
+msgid "Tags"
 msgstr ""

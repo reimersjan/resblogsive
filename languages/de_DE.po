@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Resblogsive\n"
-"POT-Creation-Date: 2015-06-12 13:30+0100\n"
-"PO-Revision-Date: 2015-06-12 13:31+0100\n"
+"POT-Creation-Date: 2015-06-14 14:16+0100\n"
+"PO-Revision-Date: 2015-06-14 14:16+0100\n"
 "Last-Translator: Jan Reimers <me@jan.rs>\n"
 "Language-Team: Jan Reimers <me@jan.rs>\n"
 "Language: de_DE\n"
@@ -44,7 +44,7 @@ msgstr "angetrieben von"
 msgid "and"
 msgstr "und"
 
-#: functions.php:48
+#: functions.php:38
 msgid "Primary Navigation"
 msgstr "Primäre Navigation"
 
@@ -56,7 +56,7 @@ msgstr "Permalink zu"
 msgid "published on"
 msgstr "veröffentlicht am"
 
-#: loop.php:12 single.php:15
+#: loop.php:16 single.php:15
 msgid "Nothing Found"
 msgstr "Nichts gefunden"
 
