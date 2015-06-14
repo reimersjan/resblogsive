@@ -4,16 +4,16 @@
   margin: 1rem auto;
   max-width: 71.25rem;
 }
-header, .footer {
+header.header-main, .footer {
   padding: 1rem 2rem;
 }
 
 /* header */
 
-header {
+header.header-main {
   height: auto;
 }
-header h1 {
+header.header-main h1 {
   padding: .25rem;
   margin: 7vh 0;
 }

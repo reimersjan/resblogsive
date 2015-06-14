@@ -19,7 +19,7 @@
 	<nav class="access" role="navigation">
 		<?php wp_nav_menu(array('container_class' => 'menu-header', 'theme_location' => 'primary')); ?>
 	</nav>
-  <header>
+  <header class="header-main">
 		<h1><?php the_title(); ?></h1>
 	</header>
 

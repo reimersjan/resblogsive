@@ -24,7 +24,7 @@
   html {
     font-size: 12px;
   }
-  header, .footer {
+  header.header-main, .footer {
     padding: .75rem 1.5rem;
   }
   .wrapper {
@@ -47,7 +47,7 @@
   html {
     font-size: 11px;
   }
-  header, .footer {
+  header.header-main, .footer {
     padding: .5rem 1rem;
   }
   .access {

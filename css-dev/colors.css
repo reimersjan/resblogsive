@@ -11,14 +11,14 @@ img.avatar {
   border: none;
   vertical-align: middle;
 }
-header {
+header.header-main {
   color: #555;
   position: relative;
   width: 100%;
   height: auto;
   display: block;
 }
-header::after {
+header.header-main::after {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -36,11 +36,11 @@ header::after {
   background: rgb(52, 73, 94);
   color: #fff;
 }
-header h1 {
+header.header-main h1 {
   color: #fff;
   text-shadow: 0 0 .5rem rgba(0, 0, 0, .6);
 }
-header h1 > * {
+header.header-main h1 > * {
   text-shadow: 0 0 .5rem rgba(0, 0, 0, .6);
   padding: 0 .2rem;
 }
