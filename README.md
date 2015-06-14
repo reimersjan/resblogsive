@@ -52,4 +52,10 @@ View a static non-CMS version of **Resblogsive** live [on CodePen](http://codepe
 - [ ] Customization through WordPress' built-in Customizer
 - [ ] Upload to [WordPress.org Themes Directory](http://wordpress.org/themes/)
 
+## Development
+
+#### gulp modules
+- gulp-concat-css
+- gulp-watch 
+
 &copy; Copyleft 2014 - [GPL](http://www.gnu.org/licenses/gpl-3.0.html) - Jan Reimers
