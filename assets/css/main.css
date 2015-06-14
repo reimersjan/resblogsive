@@ -28,12 +28,12 @@ Tags: blue, white, light, one-column, responsive-layout, custom-header, custom-m
   * dirty little helpers
 */
 
-@import url("css-dev/reset.css");
-@import url("css-dev/basics.css");
-@import url("css-dev/wpbasics.css");
-@import url("css-dev/typography.css");
-@import url("css-dev/links.css");
-@import url("css-dev/colors.css");
-@import url("css-dev/layout.css");
-@import url("css-dev/responsiveness.css");
-@import url("css-dev/helpers.css");
+@import url("assets/css/reset.css");
+@import url("assets/css/basics.css");
+@import url("assets/css/wpbasics.css");
+@import url("assets/css/typography.css");
+@import url("assets/css/links.css");
+@import url("assets/css/colors.css");
+@import url("assets/css/layout.css");
+@import url("assets/css/responsiveness.css");
+@import url("assets/css/helpers.css");
