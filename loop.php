@@ -4,7 +4,10 @@
 			<h2><a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php _e('Permalink to', 'resblogsive'); ?> <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 			<?php the_excerpt(); ?>
 			<p class="meta">
-				<time datetime="<?php the_time( get_option( 'date_format' ) ); ?>"> <?php _e('published on', 'resblogsive') ?> <?php the_time( get_option( 'date_format' ) ); ?></time>
+				<time datetime="<?php the_time( get_option( 'date_format' ) ); ?>"> <?php _e('published on', 'resblogsive') ?> <?php the_time( get_option( 'date_format' ) ); ?></time>.
+				<?php
+	        printf(_nx('1 comment', '%1$s comments', get_comments_number(), 'comments title', 'resblogsive'), number_format_i18n(get_comments_number()));
+	      ?>
 			</p>
 		</article>
 	<?php endwhile; ?>
