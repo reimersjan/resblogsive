@@ -1,0 +1,39 @@
+/*
+Theme Name: Resblogsive
+Theme URI: https://github.com/reimersjan/resblogsive
+Author: Jan Reimers
+Author URI: http://jan.rs
+Description: <strong>Resblogsive</strong> is a responsive and clean blogging theme for WordPress with a <strong>strong focus on readability</strong>. It puts your content first by adjusting the typography for every screen size and device. It utilizes HTML5 elements and CSS3 styling to present the content in the most semantic and organized way.
+Version: 0.7
+License: GNU General Public License v3
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Text Domain: resblogsive
+Domain Path: /languages/
+Tags: blue, white, light, one-column, responsive-layout, custom-header, custom-menu, editor-style, featured-images, flexible-header
+
+  * reset
+  * the very basics
+  * WordPress basics
+  * typography
+  * links
+  * colors, borders, backgrounds
+  * layout
+    * header
+    * nav
+    * content
+      * comments
+      * input, textarea
+    * footer
+  * responsiveness
+  * dirty little helpers
+*/
+
+@import url("css-dev/reset.css");
+@import url("css-dev/basics.css");
+@import url("css-dev/wpbasics.css");
+@import url("css-dev/typography.css");
+@import url("css-dev/links.css");
+@import url("css-dev/colors.css");
+@import url("css-dev/layout.css");
+@import url("css-dev/responsiveness.css");
+@import url("css-dev/helpers.css");

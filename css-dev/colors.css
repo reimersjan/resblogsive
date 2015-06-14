@@ -23,7 +23,7 @@ header.header-main::after {
   background-size: cover;
   background-repeat: no-repeat;
   content: "";
-  background-image: url(../images/headers/meisterYoda.jpg); /* WARNING: hardcoded background image !!! */
+  background-image: url(images/headers/meisterYoda.jpg); /* WARNING: hardcoded background image !!! */
   opacity: 0.6;
   top: 0;
   left: 0;
