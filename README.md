@@ -14,7 +14,6 @@ Current Version: 0.7 (development)
 - NO Sidebar - **Content is Queen!**
 - *"Webfonts that actually look good"* by [brick.im](http://brick.im)
 - [Genericons](http://genericons.com/) Icon-Font
-- 3 beautiful default header images by [Christoph Duplo](http://iftheycansocani.com)
 - Licensed under [GPLv3](https://github.com/reimersjan/resblogsive/LICENSE)
 
 ## Translations
@@ -56,6 +55,6 @@ View a static non-CMS version of **Resblogsive** live [on CodePen](http://codepe
 
 #### gulp modules
 - gulp-concat-css
-- gulp-watch 
+- gulp-watch
 
 &copy; Copyleft 2014 - [GPL](http://www.gnu.org/licenses/gpl-3.0.html) - Jan Reimers
